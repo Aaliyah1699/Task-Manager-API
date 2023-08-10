@@ -216,3 +216,55 @@ textarea {
   margin: 0 auto;
   margin-top: 6rem;
 }
+.task-form h4 {
+  text-align: center;
+}
+.task-form .form-alert {
+  margin-top: 1rem;
+}
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .form-control {
+    display: flex;
+  }
+  .task-input {
+    border-radius: 0;
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+  }
+  .submit-btn {
+    margin-top: 0;
+    width: 175px;
+    border-radius: 0;
+    border-top-right-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+  }
+}
+form > :first-child {
+  margin-top: 0;
+}
+form > :last-child {
+  margin-bottom: 0;
+}
+/* Basic Classes */
+.alert {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 1rem;
+  border-color: transparent;
+  border-radius: var(--borderRadius);
+}
+
+.alert-success {
+  color: var(--green-dark);
+  background-color: var(--green-light);
+}
+.alert-danger {
+  color: var(--red-dark);
+  background-color: var(--red-light);
+}
+.text-danger {
+  color: var(--red-dark);
+}
