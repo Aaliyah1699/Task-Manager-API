@@ -393,3 +393,33 @@ form > :last-child {
 .delete-btn {
   color: var(--red-dark);
 }
+/*************
+   SINGLE TASK
+*************/
+
+.single-task-form h4 {
+  text-align: center;
+}
+
+.single-task-form p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.single-task-form .form-control {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 0 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.single-task-form label {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.task-edit-completed {
+  width: auto;
+}
