@@ -1,0 +1,15 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "- Form analyst that communicates with the backend, the user can create, read, update, and delete tasks.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aaliyah Montgomery",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
