@@ -365,3 +365,31 @@ form > :last-child {
   color: var(--green-dark);
   visibility: hidden;
 }
+.task-completed h5 {
+  text-decoration: line-through;
+}
+.task-completed .fa-check-circle {
+  visibility: visible;
+}
+.loading-text {
+  visibility: hidden;
+}
+/* Task Links */
+.task-links {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+.delete-btn,
+.edit-link {
+  background: transparent;
+  font-size: 0.75rem;
+  border: transparent;
+  cursor: pointer;
+}
+.edit-link {
+  color: var(--green-dark);
+}
+.delete-btn {
+  color: var(--red-dark);
+}
