@@ -7,3 +7,23 @@ const formAlertDOM = document.querySelector(".form-alert");
 const params = window.location.search;
 const id = new URLSearchParams(params).get("id");
 let tempName;
+
+const showTask = async () => {
+  try {
+    const {
+      data: { task },
+    } = await axios.get(`/api/v1/tasks/${id}`);
+    const { _id: taskID, completed, name } = task;
+
+    taskIDDOM.textContent = taskID;
+    taskNameDOM.value = name;
+    tempName = name;
+    if (completed) {
+      taskCompletedDOM.checked = true;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+showTask();
